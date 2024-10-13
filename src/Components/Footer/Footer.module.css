@@ -1,0 +1,69 @@
+.bgColor {
+    background-color: #002733;
+    position: relative;
+    z-index: 1000;
+}
+.copyRights{
+    background-color: #002733;
+}
+
+li {
+    list-style: none;
+}
+
+.footerContent li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'MontserratLight' , sans-serif;
+    font-weight: 16px;
+}
+
+.footerContent li {
+    margin-top: 6%;
+}
+
+.Email {
+    font-family: 'MontserratRegular' , sans-serif;
+    font-size: 20px;
+}
+
+.ContactMail {
+    font-family: 'Advent-Pro-medium' , sans-serif;
+    font-size: 20px;
+}
+
+.smallCircle {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border: solid 1px white;
+}
+.bgColor::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    background-color:#46D3FF; 
+    z-index: 999; 
+}
+
+.copyRights p {
+    font-family: 'MontserratLight' , sans-serif;
+    font-size: 16px;
+    color:#46D3FF;
+}
+
+@media (min-width: 992px) {
+    .footerContent {
+      width: 75%;
+    }
+  }
+  
+  @media (max-width: 991.98px) {
+    .footerContent {
+      width: 95%;
+      overflow: hidden;
+    }
+  }

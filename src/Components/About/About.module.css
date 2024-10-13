@@ -1,0 +1,55 @@
+.About {
+    background-color: #002733;
+    position: relative;
+}
+.About::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 4%; /* Adjust if needed */
+    left: 0;
+    background-color: #004A62; /* Ensure the background color is set */
+    z-index: 999; /* Ensure it’s on top of other elements */
+}
+
+.SectionTitle{
+    font-family: 'AlegreyaItalic' , sans-serif ;
+    font-size: 24px;
+}
+.AboutContent p:first-of-type {
+    font-size: 54px;
+    font-family: 'Advent-Pro-Regular' , sans-serif;
+}
+
+.AboutContent p:nth-of-type(2) {
+    font-family: 'MontserratLight' , sans-serif;
+    font-size: 16px;
+}
+
+.AboutUs p {
+    font-family: 'MontserratLight' , sans-serif;
+    font-size: 14px;
+}
+
+.AboutUs h2 {
+    font-family: 'Advent-Pro-Regular' , sans-serif;
+    font-size: 60px;
+}
+
+.AboutUs {
+    position: relative;
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.AboutUs::after {
+    content: '';
+    width: 90%;
+    height: 1px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    z-index: 999; 
+}

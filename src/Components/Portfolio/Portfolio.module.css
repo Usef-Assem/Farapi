@@ -1,0 +1,89 @@
+.portfolio {
+    background-color: #002733;
+    position: relative;
+}
+
+.portfolio::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 4%; /* Adjust if needed */
+    left: 0;
+    background-color: #004A62; /* Ensure the background color is set */
+    z-index: 999; /* Ensure it’s on top of other elements */
+}
+.SectionTitle{
+    font-family: 'AlegreyaItalic' , sans-serif ;
+    font-size: 24px;
+}
+.projectTitle{
+    font-family: 'Advent-Pro-Regular' , sans-serif;
+    font-size: 28px;
+}
+.projectDescription{
+    font-family: 'MontserratLight' , sans-serif ;
+}
+
+.services{
+    font-family: 'MontserratRegular' , sans-serif;
+    font-size: 20px;
+}
+.customArrow {
+    position: absolute;
+    top: 55%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .nextArrow {
+    right: 15%;
+  }
+  
+  .prevArrow {
+    left: 15%;
+  }
+
+  @media (max-width: 767px) { 
+    .nextArrow {
+        right: 0%;
+        margin-top: 35px;
+    }
+
+    .prevArrow {
+        left: 0%;
+        margin-top: 35px;
+    }
+}
+
+.slick-dots li.slick-active button {
+    color: #fff !important ;
+    opacity: 1 !important; /* For active state */
+}
+
+/* .buttonColor {
+    background-color: #A6E6F9;
+    font-family: "AdventSemiBold", sans-serif;
+    font-size: 25px;
+    color: #0B0B0B;
+    padding: 0 80px;
+    transition: background-color 300ms;
+}
+
+.buttonColor:hover {
+    background-color: white;
+} */
+.imageWrapper {
+    border-radius: 15px;
+    overflow: hidden; 
+    transition: border-radius 0.3s ease-in-out;
+}
+
+.imageHover {
+    transition: transform 0.3s ease-in-out;
+}
+
+.imageHover:hover {
+    transform: scale(1.2) !important;
+}

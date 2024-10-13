@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'AdventSemiBold';
+    src: url('../../fonts/AdventPro-SemiBold.ttf') format('truetype');
+    font-weight: '500';
+}
+
+.bgColor {
+    background-color: #002733;
+}
+
+.navStyle li a {
+    font-family: 'AdventSemiBold', sans-serif;
+    font-size: 24px !important;
+    position: relative; /* Make sure position is set to relative to position the ::after */
+}
+
+.navStyle li a::after {
+    content: '';
+    width: 95%;
+    height: 1px;
+    position: absolute;
+    background-color: white;
+    z-index: 999;
+    top: 88%;
+    right: 0%;
+    opacity: 0; 
+}
+
+.navStyle li a:hover::after {
+    opacity: 1;
+}
+
+.navStyle li {
+    position: relative;
+}
+
+.navbarToggler {
+    background-color: white !important;
+}

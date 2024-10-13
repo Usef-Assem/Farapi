@@ -1,0 +1,58 @@
+.testmonials {
+    background-color: #002733;
+    height: "100vh";
+    position: relative;
+}
+
+.SectionTitle{
+    font-family: 'AlegreyaItalic' , sans-serif ;
+    font-size: 24px;
+}
+
+.testmonials::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 5%; /* Adjust if needed */
+    left: 0;
+    background-color: #004A62; /* Ensure the background color is set */
+    z-index: 999; /* Ensure it’s on top of other elements */
+}
+
+.title {
+    font-family: 'Advent-Pro-medium' , sans-serif;
+    font-size: 40px;
+}
+
+.description {
+    font-family: 'MontserratLight' , sans-serif ;
+    font-size: 18px;
+}
+
+.TestmonialCards {
+    border: solid 2px #004A62;
+    border-radius: 10px;
+    background: linear-gradient(to top right, #034358, #001c24);
+    width: 85% !important;
+}
+
+.TestmonialCards p:first-of-type {
+    font-family:'MontserratLight' , sans-serif ;
+    font-size: 18px;
+}
+.TestmonialCards p:nth-of-type(2){
+    font-family:'Advent-Pro-medium' , sans-serif ;
+    font-size: 20px;
+}
+.slick-prev,
+.slick-next {
+    display: none !important; /* Hides the button containers */
+}
+
+.slick-prev:before,
+.slick-next:before {
+    content: none !important; /* Hides the arrow icons */
+}
+
+
